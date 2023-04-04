@@ -6,6 +6,6 @@ set -e
 
 [[ "$DEBUG" == "true" ]] && set -x
 
-echo -e "${PASSWORD:-$(hostname)}\n${PASSWORD:-$(hostname)}" | smbpasswd -a -s -c /etc/samba/smb.conf root
+echo -e "${PASSWORD:-$(hostname)}\n${PASSWORD:-$(hostname)}" | smbpasswd -a -s -c /etc/samba/smb.conf admin
 
 exec "$@"
