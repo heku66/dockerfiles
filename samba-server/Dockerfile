@@ -18,6 +18,5 @@ ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 
 CMD nmbd --daemon && \
     smbd --foreground \
-         --debug-stdou \
          --no-process-group \
          --configfile /etc/samba/smb.conf
